@@ -42,7 +42,7 @@ export async function POST(request) {
     // The mobile WebView intercepts navigation to that URL (via
     // onShouldStartLoadWithRequest) before it actually loads, so the page
     // doesn't need to serve anything useful — the domain just needs to match.
-    const callbackURL = process.env.BKASH_CALLBACK_URL || 'https://payment.poripurok.com';
+    const callbackURL = process.env.BKASH_CALLBACK_URL || 'https://payment.poripurok.com/v2/callback';
 
     const created = await createBkashPayment({
       amount: pkg.price,
