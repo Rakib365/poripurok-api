@@ -44,6 +44,11 @@ const ALLOWED_ORIGINS = [
   // different origins, so list both).
   'http://localhost:3001',
   'http://127.0.0.1:3001',
+  // Teammate's local dev server used for capturing Play Store tablet
+  // screenshots from the React Native web build. Safe to leave in —
+  // localhost can only be reached from the teammate's machine.
+  'http://localhost:8081',
+  'http://127.0.0.1:8081',
 ];
 
 const ALLOWED_METHODS = 'GET, POST, PATCH, PUT, DELETE, OPTIONS';
