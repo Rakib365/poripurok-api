@@ -21,3 +21,6 @@ npm-debug.log*
 .DS_Store
 *.pem
 .vercel
+
+# local analysis
+_analysis/
